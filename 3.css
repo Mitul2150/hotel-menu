@@ -1,0 +1,183 @@
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+      background: rgb(219, 181, 181);
+      background-image: url(bg/pexels-moose-photos-1037992.jpg);
+      background-repeat: no-repeat;
+      right: 0;
+      left: 0;
+      padding: 0;
+      margin: 0;
+      touch-action: none;
+      background-size: 100%;
+  }
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+.header {
+    background-color: #66000000;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    font-size: 50px;
+    
+}
+div.first{
+    width: 100px;
+    height: 60px;
+    position: fixed;
+}
+.main {
+    height: 10%;
+    margin-top: 60px;
+    padding: 10px 50px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 150px;
+    margin-top: 60px;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+    background: #66000000;
+}
+.menu{
+  list-style: none; 
+    margin:0;
+    padding:0;
+}
+.menu li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.menu li a{
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+#openSidebarMenu:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input#openSidebarMenu{
+    display: none;
+}
+.sidebarIconToggle {
+  height: 22px;
+    width: 22px;
+    position: absolute;
+    z-index: 99;
+    top: 22px;
+    right: 15px;
+    transition: all 0.3s;
+    cursor: pointer; 
+}
+.spinner {
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.spinner.middle ,
+.spinner.bottom{
+    margin-top: 3px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+    opacity: 0;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(20, 19, 19);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 10px;
+    background-image: url(bg/pexels-fwstudio-164005.jpg);
+    padding: 10px;
+    width: 90%;
+    height: 50%;
+    margin: 100px auto;
+    overflow-block: 0;
+    background-size: 100%;
+  }
+  div.sem1{
+    width: 70%;
+    padding: 50px;
+    background: #fff;
+    float: right;
+
+  }
+  div.sem5{
+        float: left;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 1;
+    }
+  }
+  ::-webkit-scrollbar{
+    display: none;
+}

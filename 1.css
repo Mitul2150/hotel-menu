@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+    background-image: url(image/h21.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    touch-action: none;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+div.sem{
+   float: left;
+   font-size: 30px;
+   font-family: Courier New ;
+   color: #000000;
+   text-shadow: 0 0 3px #fffafa, 0 0 5px hsl(17, 100%, 60%);
+   
+   }
+div.sem2{
+  font-family: Comic Sans MS, Comic Sans, cursive ;
+  font-size: 40PX;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 3px #df1e1e, 0 0 5px #0f0e0e;
+
+}
+input[type=submit] {
+  background-color: #c41f1f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius:30px;
+}
+
+div.sem3:hover {background-color: #d4df3b}
+
+div.sem3:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px rgb(198, 248, 17);
+  transform: translateY(4px);
+}
+
+
+
+.header {
+    background-color: #66000000;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    font-size: 50px;
+    
+}
+div.first{
+    width: 100px;
+    height: 60px;
+    position: fixed;
+}
+.main {
+    height: 10%;
+    margin-top: 60px;
+    padding: 10px 50px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 150px;
+    margin-top: 60px;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+    background: #66000000;
+}
+.menu{
+  list-style: none; 
+    margin:0;
+    padding:0;
+}
+.menu li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.menu li a{
+    color: rgb(7, 6, 6);
+    display: block;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+#openSidebarMenu:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input#openSidebarMenu{
+    display: none;
+}
+.sidebarIconToggle {
+  height: 22px;
+    width: 22px;
+    position: absolute;
+    z-index: 99;
+    top: 22px;
+    right: 15px;
+    transition: all 0.3s;
+    cursor: pointer; 
+}
+.spinner {
+    height: 3px;
+    background-color: rgb(2, 2, 2);
+    transition: all 0.3s;
+}
+.spinner.middle ,
+.spinner.bottom{
+    margin-top: 3px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+    opacity: 0;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 225px;
+    float: right;
+    border-radius: 30px;
+
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(243, 243, 243);
+     border-radius:30px;
+}
+
+ div.container::-webkit-scrollbar{
+   width: 1px;
+ }
+
+  div.img{
+    border-radius: 50px;
+ 
+  }
+  .all-browsers {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+    
+  }
+  
+  .all-browsers > h1, .browser {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .browser {
+    background: white;
+  }
+  
+  .browser > h2, p {
+    margin: 4px;
+    font-size: 90%;
+  }
+  
+
+::-webkit-scrollbar{
+    display: none;
+}
